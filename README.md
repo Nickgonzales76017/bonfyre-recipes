@@ -1,8 +1,19 @@
 # Bonfyre Recipes
 
-Ready-to-use workflows for [Bonfyre](https://github.com/Nickgonzales76017/bonfyre) — the 47-binary local-first backend engine.
+Ready-to-use workflows for [Bonfyre](https://github.com/Nickgonzales76017/bonfyre) — the 48-binary local-first backend engine.
 
 Each recipe is a step-by-step guide that shows how Bonfyre turns messy business input (calls, files, notes, recordings) into organized, searchable, reusable output.
+
+## What powers these recipes
+
+| Capability | Detail |
+|---|---|
+| Transcription quality | **0.997** (HCP v3.2, tiny q5_0, 29 MB model) |
+| Hallucination detection | **9 layers** — 0.09% error rate |
+| Pipeline latency | **< 8 ms** per stage |
+| Total size | **~2.1 MB** (48 static C11 binaries) |
+| OpenAI compatibility | Drop-in via `bonfyre-proxy serve --port 8787` |
+| Compression | **9.3%** JSON ratio (Lambda Tensors, O(1) field reads) |
 
 ## How recipes work
 
